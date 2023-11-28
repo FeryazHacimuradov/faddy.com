@@ -1,4 +1,9 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { Profile } from "./pages/profile/Profile";
 import { Login } from "./pages/login/Login";
@@ -8,7 +13,7 @@ import { LeftBar } from "./components/leftBar/LeftBar";
 import { RightBar } from "./components/rightBar/RightBar";
 
 function App() {
-  const currentUser = false;
+  const currentUser = true;
 
   const Layout = () => {
     return (
