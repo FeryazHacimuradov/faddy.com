@@ -1,11 +1,23 @@
 .leftBar {
+  flex: 1;
   .container {
     padding: 20px;
+
+    hr {
+      margin: 20px 0px;
+      border: none;
+      height: 0.5px;
+      background-color: lightgrey;
+    }
 
     .menu {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      span {
+        font-size: 12px;
+      }
 
       .user {
         display: flex;
@@ -20,6 +32,7 @@
         }
 
         span {
+          font-size: 16px;
         }
       }
       .item {
@@ -32,6 +45,7 @@
         }
 
         span {
+          font-size: 16px;
         }
       }
     }
