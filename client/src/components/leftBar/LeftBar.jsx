@@ -46,6 +46,54 @@ export const LeftBar = () => {
             <span>Memories</span>
           </div>
         </div>
+        <hr />
+        <div className="menu">
+          <span>Your shourtcuts</span>
+          <div className="item">
+            <img src={Friends} alt="" />
+            <span>Friends</span>
+          </div>
+          <div className="item">
+            <img src={Groups} alt="" />
+            <span>Groups</span>
+          </div>
+          <div className="item">
+            <img src={Market} alt="" />
+            <span>Marketplace</span>
+          </div>
+          <div className="item">
+            <img src={Watch} alt="" />
+            <span>Watch</span>
+          </div>
+          <div className="item">
+            <img src={Memories} alt="" />
+            <span>Memories</span>
+          </div>
+        </div>
+        <hr />
+        <div className="menu">
+          <span>Others</span>
+          <div className="item">
+            <img src={Friends} alt="" />
+            <span>Friends</span>
+          </div>
+          <div className="item">
+            <img src={Groups} alt="" />
+            <span>Groups</span>
+          </div>
+          <div className="item">
+            <img src={Market} alt="" />
+            <span>Marketplace</span>
+          </div>
+          <div className="item">
+            <img src={Watch} alt="" />
+            <span>Watch</span>
+          </div>
+          <div className="item">
+            <img src={Memories} alt="" />
+            <span>Memories</span>
+          </div>
+        </div>
       </div>
     </div>
   );
