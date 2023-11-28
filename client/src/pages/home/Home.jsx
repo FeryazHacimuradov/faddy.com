@@ -1,5 +1,9 @@
 import "./home.scss";
 
 export const Home = () => {
-  return <div>home</div>;
+  return (
+    <div className="home">
+      <h1>Home</h1>
+    </div>
+  );
 };
