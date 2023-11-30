@@ -1,8 +1,7 @@
-import { Post } from "./components/post/Post";
-
+import { Post } from "../post/Post";
 import "./posts.scss";
 
-export const Post = () => {
+export const Posts = () => {
   const posts = [
     {
       id: 1,
@@ -26,9 +25,9 @@ export const Post = () => {
 
   return (
     <div className="posts">
-      {posts.map((post) => {
-        <Post post={post} key={post.id} />;
-      })}
+      {posts.map((post) => (
+        <Post post={post} key={post.id} />
+      ))}
     </div>
   );
 };

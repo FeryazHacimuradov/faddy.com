@@ -1,4 +1,4 @@
-import { Post } from "../../components/posts/Post";
+import { Posts } from "../../components/posts/Posts";
 import { Stories } from "../../components/stories/Stories";
 import "./home.scss";
 
@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="home">
       <Stories />
-      <Post />
+      <Posts />
     </div>
   );
 };
