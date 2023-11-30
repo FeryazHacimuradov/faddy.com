@@ -10,7 +10,11 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = () => {
-    setCurrentUser({ id: 1, name: "Faryaz" });
+    setCurrentUser({
+      id: 1,
+      name: "Faryaz",
+      img: "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    });
   }; // i do this after writing API in Node.js
 
   useEffect(() => {

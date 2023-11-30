@@ -1,6 +1,10 @@
-import "./stories.jsx";
+import { useContext } from "react";
+import { AuthContext } from "../../context/authContext";
+import "./stories.scss";
 
 export const Stories = () => {
+  const { currentUser } = useContext(AuthContext);
+
   //TEMPORARY
   const stories = [
     {
@@ -27,15 +31,17 @@ export const Stories = () => {
 
   return (
     <div className="stories">
-      {stories.map((story) => {
-        <div className="story">
-          {console.log(story.name)}
-
+      <div className="story">
+        <img src={currentUser.img} alt="" />
+        <span>{currentUser.name}</span>
+        <button>+</button>
+      </div>
+      {stories.map((story) => (
+        <div className="story" key={story.id}>
           <img src={story.img} alt="" />
           <span>{story.name}</span>
-        </div>;
-      })}
-      <h1>Hello world</h1>
+        </div>
+      ))}
     </div>
   );
 };
