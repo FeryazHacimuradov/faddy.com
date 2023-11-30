@@ -17,6 +17,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
 import Chats from "./components/chats/Chats";
+import Chat from "./components/chat/Chat";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -65,6 +66,10 @@ function App() {
         {
           path: "/chats",
           element: <Chats />,
+        },
+        {
+          path: "/chat/:userId",
+          element: <Chat />,
         },
       ],
     },
