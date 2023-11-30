@@ -1,10 +1,12 @@
 import "./leftBar.scss";
+import { Link } from "react-router-dom";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import SportsSoccerOutlinedIcon from "@mui/icons-material/SportsSoccerOutlined";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
@@ -27,6 +29,16 @@ export const LeftBar = () => {
             <GroupOutlinedIcon />
             <span>Friends</span>
           </div>
+          <Link
+            to={"/chats"}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="item">
+              <ChatOutlinedIcon />
+              <span>Chats</span>
+            </div>
+          </Link>
+
           <div className="item">
             <GroupsOutlinedIcon />
             <span>Groups</span>

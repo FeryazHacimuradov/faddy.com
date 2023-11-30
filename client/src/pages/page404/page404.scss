@@ -1,0 +1,16 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  span {
+    font-weight: bold;
+    font-size: 80px;
+    color: themed("logo");
+  }
+  h1 {
+    color: red;
+  }
+}

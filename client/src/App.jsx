@@ -8,6 +8,7 @@ import { Home } from "./pages/home/Home";
 import { Profile } from "./pages/profile/Profile";
 import { Login } from "./pages/login/Login";
 import { Register } from "./pages/register/Register";
+import { Page404 } from "./pages/page404/Page404";
 import { NavBar } from "./components/navBar/NavBar";
 import { LeftBar } from "./components/leftBar/LeftBar";
 import { RightBar } from "./components/rightBar/RightBar";
@@ -15,6 +16,7 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
+import Chats from "./components/chats/Chats";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -60,6 +62,10 @@ function App() {
           path: "/profile/:id",
           element: <Profile />,
         },
+        {
+          path: "/chats",
+          element: <Chats />,
+        },
       ],
     },
     {
@@ -69,6 +75,10 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/*",
+      element: <Page404 />,
     },
   ]);
 

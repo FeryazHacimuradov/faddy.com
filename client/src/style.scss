@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 $themes: (
   light: (
     textColor: #000,
@@ -40,24 +46,14 @@ $themes: (
   @return map-get($theme-map, $key);
 }
 
-/* Reset Styles */
-* {
-  margin: 0;
-  padding: 0;
-  //   box-sizing: border-box;
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
 }
 
-// body {
-//   font-family: Arial, sans-serif;
-// }
-
-/* Additional Reset Styles (Optional) */
-// a {
-//   text-decoration: none;
-//   color: inherit;
-// }
-
-// ul,
-// ol {
-//   list-style: none;
-// }
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}

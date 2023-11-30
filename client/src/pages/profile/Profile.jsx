@@ -1,4 +1,6 @@
 import "./profile.scss";
+import { Link } from "react-router-dom";
+
 import { Posts } from "../../components/posts/Posts";
 
 export const Profile = () => {
