@@ -13,7 +13,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 
 export const NavBar = () => {
-  const { toggle } = useContext(DarkModeContext);
+  const { toggle, darkMode } = useContext(DarkModeContext);
 
   return (
     <div className="navBar">
@@ -22,7 +22,11 @@ export const NavBar = () => {
           <span>Faddy.com</span>
         </Link>
         <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon onClick={toggle} />
+        {darkMode ? (
+          <WbSunnyOutlinedIcon onClick={toggle} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggle} />
+        )}
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />

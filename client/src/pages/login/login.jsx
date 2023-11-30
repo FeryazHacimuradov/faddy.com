@@ -6,11 +6,10 @@ export const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Faddy</h1>
+          <h1>Welcome Faddy</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+            Elevate your lifestyle on this dynamic social network. Join us for a
+            journey of shared moments.
           </p>
           <span>Don't you have an account?</span>
           <Link to="/register">
