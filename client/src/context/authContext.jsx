@@ -9,7 +9,9 @@ export const AuthContextProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("user")) || null
   );
 
-  const login = () => {}; // i do this after writing API in Node.js
+  const login = () => {
+    setCurrentUser({ id: 1, name: "Faryaz" });
+  }; // i do this after writing API in Node.js
 
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(currentUser));

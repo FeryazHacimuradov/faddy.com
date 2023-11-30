@@ -6,8 +6,12 @@ import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined
 import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SportsSoccerOutlinedIcon from "@mui/icons-material/SportsSoccerOutlined";
+import { useContext } from "react";
+import { AuthContext } from "../../context/authContext";
 
 export const LeftBar = () => {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <div className="leftBar">
       <div className="container">
@@ -17,7 +21,7 @@ export const LeftBar = () => {
               src="https://images.pexels.com/photos/998850/pexels-photo-998850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
-            <span>Faryaz Hajimuradov</span>
+            <span>{currentUser.name}</span>
           </div>
           <div className="item">
             <GroupOutlinedIcon />
