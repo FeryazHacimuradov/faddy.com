@@ -15,7 +15,6 @@ export const Post = ({ post }) => {
   return (
     <div className="post">
       <div className="container">
-        {console.log({ post })}
         <div className="user">
           <div className="userInfo">
             <img src={post.profilePic} alt="" />
