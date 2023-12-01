@@ -26,10 +26,10 @@ const Chat = () => {
             <MoreHorizOutlinedIcon />
           </div>
         </div>
-        <div className="allMessages">
+        <div className="allMesages">
           <Messages />
         </div>
-        <div className="message">
+        <div className="writeMessage">
           <input type="text" />
           <button>Send</button>
         </div>

@@ -2,10 +2,12 @@
 
 .chats {
   @include themify($themes) {
-    padding: 30px;
     background-color: themed("bgSoft");
     color: themed("textColor");
     height: 100%;
+    padding: 20px 0px 0px 20px;
+    height: calc(100% - 20px);
+    overflow: scroll;
 
     @include mobile {
       padding: 10px;

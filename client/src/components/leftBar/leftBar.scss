@@ -9,7 +9,6 @@
     overflow: scroll;
     background-color: themed("bg");
     color: themed("textColor");
-
     @include mobile {
       display: none;
     }
@@ -18,6 +17,8 @@
       display: none;
     }
     .container {
+      padding-left: 20px;
+
       padding: 20px;
 
       hr {
